@@ -1,0 +1,13 @@
+Colors used in this project:
+platinum: 
+	Hex : #E5E5E5
+	RGB : 229, 229, 229
+Davy's grey:
+	Hex : #555555
+	RGB : 85, 85, 85	
+Light grey:
+	Hex : #D3D3D3
+	RGB : 211, 211, 211
+Green:
+	Hex : #008131
+copyright @dipenShrestha

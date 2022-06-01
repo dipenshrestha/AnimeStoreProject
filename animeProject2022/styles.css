@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+	width: 100%;
+	background-color: #e5e5e5;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#container{
+	height: 100%;
+	width: 100%;
+}
+
+#headContainer {
+	display: flex;
+	flex-direction: row;
+    /* justify-content: center; */
+	/* margin-top: 20px; */
+	width:100%;
+    height: 20%
+    padding-top: 10px;
+    background-color: #d3d3d3;
+}
+
+#logohead {
+    padding-left: 70px;
+}
+
+#logoheadpic {
+    width: 90px;
+}
+
+nav {
+    padding-left: 42%;
+    padding-top: 25px;
+}
+
+nav li{
+	margin-top: 10px;
+}
+
+nav ul li{
+    list-style: none; 
+    display: inline-block; /*displays list in horizontal*/
+} 
+
+nav ul li.active a, nav ul li a:hover, nav ul li a:focus{
+    color:#008131;
+}
+
+/* styles the link part of the list (menu bar) */
+nav ul li a{
+	text-decoration: none; /*Removes underline in link*/
+	/* display: block; */
+	/* line-height: 5px; */
+	padding: 0 25px 0px 30px; /*space between list elements*/
+	color: black;
+    font-size: larger;
+}
+
+nav ul li.drop-menu{
+    position: relative;
+}
+
+nav ul li ul.drop-down{
+    background: #d3d3d3;
+    min-width: 200px;
+    min-height:130px;
+    position: absolute;
+	margin-left: -100px;
+    padding: 20px 20px 20px 20px;
+    display: none; /*To hide drop menu when not hovered*/
+}
+
+/*display drop down when mouse is hovered over bars*/
+ nav ul li.drop-menu:hover .drop-down{
+    display: block;
+}
+
+/*when elements in drop menu is hovered the highlighted part*/
+nav ul li ul.drop-down li{
+    display: block;
+}
+
+nav ul li ul.drop-down li a{
+    /* line-height:inherit; */
+    padding: 19px 0px 21px 0px;
+    text-transform: capitalize;
+    color: black;
+    border-bottom:1px solid #cccccc;
+    display: block;
+    font-size: 18px;
+    /* For smooth animation while hovering */
+    transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+
+/* action to take when mouse is hovered over drop list */
+nav ul li ul.drop-down li a:hover{
+    padding-left: 15px;
+    color:#008131;
+    background:#cccccc;
+}
+
+#content {
+    display: flex;
+	flex-direction: row;
+    /* justify-content: center; */
+	/* margin-top: 20px; */
+	width            :100%;
+    height           : 60%
+    padding-top      : 10px;
+    background-color : #d3d3d3;
+}
+
+footer {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+	padding: 40px;
+	width:100%;
+    height: 20%
+    padding-top : 10px;
+    background-color :#949393;
+}
+
+#logofootpic {
+    width: 50px;
+}
+
+#logofoot {
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#copyf1 {
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
